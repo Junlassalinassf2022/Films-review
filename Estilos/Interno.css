@@ -1,0 +1,224 @@
+html {
+	font-family: 'The Gaeilge Kids', sans-serif;
+}
+body {
+	background-color: #141414;
+}
+header li {
+	display: inline;
+	float: left;
+}
+
+header li a {
+	padding: 18px 16px;
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header li::not(.actual) {
+	background-color: #B0B2D8;
+}
+
+header li:hover {
+	background-color: #B0B2D8;
+}
+
+.actual {
+	background-color: orange;
+}
+
+header {
+	font-family: Arial;
+	background-color: #141414;
+	margin: 10px;
+}
+
+header div {
+	height: 58px;
+}
+
+header div div {
+	float: left;
+}
+
+header div div a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+}
+header div div a img {
+	width: 54px;
+}
+
+main {
+	width: 100%;
+	margin-bottom: 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.caja {
+	margin: auto;
+	width: 100%;
+	max-width: 1800px;
+}
+
+.cate {
+	width: 100%;
+	background-color: #5AFD86;
+	height: 100px; 
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.cate h2 {
+	margin-left: 10px;
+	position: absolute;
+	left: 10%;
+	font-size: 40px;
+}
+
+.contenedor {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.video {
+	margin-left: 50px;
+}
+
+.Título {
+	margin-left: 30px;
+	color: rgb(255, 255, 255);
+
+	h2 {
+		font-size: 28px;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+
+.Info {
+	margin: 0 30px;
+	color: white;
+	h2 {
+		font-size: 50px;
+	}
+	p {
+		font-size: 25px;
+	}
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 0px 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 1px;
+box-shadow: 5px 5px 10px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1px;
+  margin-top: -80px;
+  height: 20px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 20px 10px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.enlace {
+	height:100%;
+	width: 100%;
+	position: absolute;
+}
+
+.calificación {
+	background-color: #5AFD86;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	color: black;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+footer {
+	width: 100%;
+	margin: 40px 0;
+}
+
+footer div {
+	width: 100%;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0;
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul li a {
+	padding: 18px 70px;
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
